@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TU ENTRENADOR ONLINE</title>
+  <meta name="description" content="Entrenamiento online de running y trailrunning. 17 años de experiencia, control diario y comunidad internacional." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --black: #0b0b0b;
+      --white: #ffffff;
+      --gray: #6f6f6f;
+      --light: #f5f5f5;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--white);
+      color: var(--black);
+      line-height: 1.7;
+    }
+
+    section { padding: 96px 24px; }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+      font-weight: 800;
+      letter-spacing: -1px;
+      text-align: center;
+    }
+
+    h1 { font-size: 3.2rem; margin-bottom: 24px; }
+    h2 { font-size: 2.2rem; margin-bottom: 32px; }
+    h3 { font-size: 1.35rem; margin-bottom: 16px; }
+
+    p {
+      color: var(--gray);
+      font-size: 1.05rem;
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #e5e5e5;
+      text-align: center;
+    }
+
+    .hero p { margin-bottom: 40px; font-size: 1.15rem; }
+
+    .btn {
+      display: inline-block;
+      padding: 16px 36px;
+      border: 2px solid var(--black);
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--black);
+      transition: all 0.25s ease;
+      margin-top: 24px;
+    }
+
+    .btn:hover { background: var(--black); color: var(--white); }
+
+    .light { background: var(--light); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+      margin-top: 56px;
+    }
+
+    .card {
+      border: 1px solid #e5e5e5;
+      padding: 36px 28px;
+      text-align: center;
+    }
+
+    .card p { font-size: 0.95rem; }
+
+    .dark {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .dark p { color: #cccccc; }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 28px;
+      margin-top: 48px;
+    }
+
+    .links a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 2px solid transparent;
+    }
+
+    .links a:hover { border-color: var(--white); }
+
+    footer {
+      padding: 32px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--gray);
+      border-top: 1px solid #e5e5e5;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.4rem; }
+      h2 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="container">
+    <img src="logo.png" alt="Tu Entrenador Online" style="max-width:220px;margin:0 auto 32px;display:block;" />
+    <h1 style="margin-bottom:0; line-height:1.05;">TU ENTRENADOR</h1>
+    <div style="font-size:1.9rem;letter-spacing:3px;font-weight:600;margin-top:4px;margin-bottom:24px;">ONLINE</div>
+
+    <p>
+  Entrenamiento online de running y trailrunning, desde principiante hasta nivel élite,
+  para quienes quieren empezar de cero, mejorar su rendimiento o retomar el camino
+  después de estancarse o lesionarse por falta de atención real.
+</p>
+
+<p style="margin-top:16px;">
+  17 años entrenando corredores de habla hispana, con planificación individual<br />
+  y control diario.
+</p>
+
+    <a class="btn" href="https://wa.me/+995598786651" target="_blank">Contactar por WhatsApp</a>
+  </div>
+</section>
+
+<section class="light">
+  <div class="container">
+    <h2>Experiencia real, no planes genéricos</h2>
+    <p>
+      La mayoría de mis alumnos llega después de pasar por
+      planes estándar, entrenadores sin seguimiento
+      o procesos donde se entrenó más de lo que se podía sostener.
+    </p>
+    <p style="margin-top:24px;">
+      El foco no es entrenar más,
+      sino entrenar mejor, sostener el proceso
+      y progresar sin lesionarse.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Cómo entrenamos</h2>
+    <p>
+      El entrenamiento es totalmente personalizado y se adapta
+      a tu nivel, tu contexto y tus objetivos.
+      La planificación se ajusta semanalmente
+      y el control es diario, con contacto directo.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Planificación ajustada</h3>
+        <p>Cargas adaptadas semana a semana según evolución real.</p>
+      </div>
+      <div class="card">
+        <h3>Control diario</h3>
+        <p>Seguimiento constante para detectar errores antes de que aparezcan.</p>
+      </div>
+      <div class="card">
+        <h3>Carga controlada</h3>
+        <p>Progresión diseñada para mejorar reduciendo al mínimo el riesgo.</p>
+      </div>
+    </div>
+
+    <p style="margin-top:40px;">
+      El sistema funciona cuando se respeta la estructura,
+      la carga y el descanso.
+      Las mejoras llegan como consecuencia del proceso,
+      no de forzar entrenamientos.
+    </p>
+  </div>
+</section>
+
+<section class="light">
+  <div class="container">
+    <h2>Qué incluye el entrenamiento</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Running y trail</h3>
+        <p>Entrenamientos específicos según distancia, terreno y objetivo.</p>
+      </div>
+      <div class="card">
+        <h3>Fuerza y prevención</h3>
+        <p>Trabajo funcional, gimnasio y prevención de lesiones.</p>
+      </div>
+      <div class="card">
+        <h3>Técnica y cruzado</h3>
+        <p>Técnica de carrera y trabajos complementarios.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Reporte de progreso semanal y mensual</h2>
+    <p>
+      Cada semana y al terminar el mes recibís un reporte claro y personalizado.<br />
+      No es un mensaje genérico: es un análisis concreto del proceso.
+    </p>
+    <p style="margin-top:24px;">
+      Saber qué sostener, qué ajustar y hacia dónde ir
+      es clave para progresar de forma constante.
+    </p>
+  </div>
+</section>
+
+<section class="light">
+  <div class="container">
+    <h2>Nutrición (opcional)</h2>
+    <p>
+      La nutrición es un sistema simple y práctico, diseñado para mejorar
+      la eficiencia metabólica y entrenar el sistema digestivo.
+      No es una dieta cerrada ni un plan “solo comer sano”.<br />
+      Es una estructura novedosa que, en conjunto con este entrenamiento,
+      ayuda a mejorar<br />
+      el uso de las grasas como fuente de energía.
+    </p>
+    <p style="margin-top:24px;">
+      Los precios del entrenamiento y la nutrición dependen del país.<br />
+      Hay una promoción especial para quienes combinan ambos servicios.
+    </p>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="container">
+    <h2>Una comunidad que acompaña</h2>
+    <p>
+      Entrenan personas de más de 10 países.<br />
+      La comunidad acompaña el proceso,
+      motiva y refuerza la constancia.
+    </p>
+
+    <div class="links">
+      <a href="https://www.strava.com/clubs/572654" target="_blank">🏃 Strava</a>
+      <a href="https://www.instagram.com/tu.entrenador_online" target="_blank">📸 Instagram</a>
+      <a href="https://www.youtube.com/@Tuentrenador.online" target="_blank">▶ YouTube</a>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="container">
+    <h2>Un sistema que valora la constancia</h2>
+    <p>
+      Quienes sostienen el proceso en el tiempo
+      terminan pagando menos<br />
+      que quienes se suman más tarde.
+    </p>
+    <p style="margin-top:24px;">
+      La constancia mejora el rendimiento,
+      reduce errores y también es reconocida.
+    </p>
+  </div>
+</section>
+
+<section style="text-align:center;">
+  <div class="container">
+    <h2>Empezá hoy</h2>
+    <p>
+      Escribime por WhatsApp.<br />
+      Evaluamos tu situación, tus objetivos y te propongo la mejor forma de empezar.<br />
+    </p>
+    <a class="btn" href="https://wa.me/+995598786651" target="_blank">Hablar por WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <p>
+  Contacto alternativo:
+  <a href="mailto:tuentrenadoronlinepro@gmail.com" style="color:#0b0b0b; text-decoration:none;">
+    tuentrenadoronlinepro@gmail.com
+  </a>
+</p>
+    <p style="margin-top:8px;">© 2026 — tuentrenadoronline.com</p>
+</footer>
+
+</body>
+</html>
