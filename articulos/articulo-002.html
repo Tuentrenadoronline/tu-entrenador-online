@@ -3,21 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TITULO PRINCIPAL DEL ARTICULO</title>
+    <title>TÍTULO DEL ARTÍCULO</title>
     <style>
-        body { 
-            font-family: sans-serif; 
-            line-height: 1.6; 
-            max-width: 800px; 
-            margin: auto; 
-            padding: 40px 20px; 
-            color: #0b0b0b; 
-        }
-        h1 { font-size: 2.5rem; margin-bottom: 10px; }
-        .fecha { color: #888; margin-bottom: 30px; display: block; }
-        .texto-principal { font-size: 1.1rem; }
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 40px 20px; color: #0b0b0b; }
+        h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .meta { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+        .content { font-size: 1.1rem; }
         
-        /* Botón Negro Pro */
+        /* Botón Pro Negro */
         .btn-back {
             display: inline-flex;
             align-items: center;
@@ -27,7 +20,7 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: 600;
-            margin-top: 50px;
+            margin-top: 40px;
             transition: 0.3s;
         }
         .btn-back:hover { background-color: #333; }
@@ -35,15 +28,13 @@
 </head>
 <body>
 
-    <span class="fecha">FECHA DE PUBLICACIÓN</span>
-    <h1>TITULO PRINCIPAL</h1>
+    <header>
+        <h1>TÍTULO DEL ARTÍCULO</h1>
+    </header>
 
-    <div class="texto-principal">
-        <p>ESCRIBE AQUÍ EL TEXTO DEL PRIMER PÁRRAFO.</p>
-        
-        <p>ESCRIBE AQUÍ EL TEXTO DEL SEGUNDO PÁRRAFO O INFORMACIÓN RELEVANTE.</p>
-
-        </div>
+    <article class="content">
+        <p>Aquí va el texto completo de tu artículo...</p>
+        </article>
 
     <a href="../blog.html" class="btn-back">
         <span style="margin-right: 8px;">←</span> Volver al listado de artículos
