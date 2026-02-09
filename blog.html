@@ -27,7 +27,30 @@
 
         </div>
 
-    <a href="index.html" class="back-home">← Volver a la página principal</a>
+    <style>
+    .btn-back {
+        display: inline-flex;
+        align-items: center;
+        background-color: #0b0b0b; /* El negro exacto de tu web  */
+        color: #ffffff;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-family: 'Inter', sans-serif; /* La fuente que ya usas  */
+        font-weight: 600;
+        font-size: 14px;
+        transition: all 0.3s ease;
+        margin-top: 20px;
+    }
+    .btn-back:hover {
+        background-color: #333333;
+        transform: translateY(-2px);
+    }
+</style>
+
+<a href="index.html" class="btn-back">
+    <span style="margin-right: 8px;">←</span> Volver a la página principal
+</a>
 
 </body>
 </html>
