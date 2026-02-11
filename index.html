@@ -147,17 +147,13 @@
     }
     .header-full {
     width: 100%;
-    margin: 0;
-    padding: 0;
-    line-height: 0; /* Elimina espacios extra abajo */
-}
-
-.banner-img {
-    width: 100%;
-    height: auto; 
-    max-height: 500px; 
-    object-fit: cover; 
-    display: block;
+    background-image: url('logo.png'); /* La imagen de la montaña con el logo */
+    background-size: cover;
+    background-position: center;
+    height: 350px; /* Controla qué tan alta es la cabecera */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
   </style>
   <link rel="icon" href="favicon.png" type="image/png">
@@ -165,8 +161,7 @@
 <body>
 
 <header class="header-full">
-    <img src="logo.png" alt="TU ENTRENADOR ONLINE" class="banner-img">
-</header>
+    </header>
 
 <div style="text-align: center; padding: 20px;">
     <h1 style="margin-bottom:0; line-height:1.05;">TU ENTRENADOR</h1>
