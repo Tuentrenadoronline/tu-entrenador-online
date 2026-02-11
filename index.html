@@ -161,6 +161,23 @@
     align-items: center;
     background-color: #ffffff;
 }
+    /* Estilos para el bloque de texto principal */
+.contenido-principal {
+    text-align: center;
+    padding: 50px 20px; /* En PC: 50px arriba/abajo, 20px lados */
+    max-width: 1000px;  /* Evita que en pantallas muy anchas el texto se desparrame */
+    margin: 0 auto;     /* Lo centra en la pantalla */
+}
+
+/* Ajustes SOLO para el móvil */
+@media (max-width: 768px) {
+    .contenido-principal {
+        /* Aquí el truco: 
+           30px a los lados para que no toque bordes.
+           80px abajo para separarlo de la zona gris. */
+        padding: 30px 30px 80px 30px; 
+    }
+}
   </style>
   <link rel="icon" href="favicon.png" type="image/png">
 </head>
@@ -169,7 +186,7 @@
 <header class="header-full">
     </header>
 
-<div style="text-align: center; padding: 20px;">
+<div class="contenido-principal">
     <h1 style="margin-bottom:0; line-height:1.05;">TU ENTRENADOR</h1>
     <div style="font-size:1.9rem; letter-spacing:3px; font-weight:600; margin-top:-4px; margin-bottom:10px;">ONLINE</div>
     <h2 style="font-size:1.2rem; letter-spacing:1px; font-weight:400; margin-bottom:24px; color:#555;">Especialista en Trail Running y Carreras de Montaña</h2>
