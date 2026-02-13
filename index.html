@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7LXJN9BS50"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7LXJN9BS50');
+</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
@@ -206,7 +215,16 @@
         <div>- Tú decides</div>
     </div>
     <div style="margin-top: 5px;">
-    <a class="btn" style="margin-top: 7px !important;" href="https://wa.me/995598786651?text=Hola!%20Quiero%20más%20información%20sobre%20el%20entrenamiento%20personalizado%20y%20nutrición" target="_blank">Contactar por WhatsApp</a>
+    <a class="btn" 
+   style="margin-top: 7px !important;" 
+   href="https://wa.me/995598786651?text=Hola!%20Quiero%20más%20información%20sobre%20el%20entrenamiento%20personalizado%20y%20nutrición" 
+   target="_blank"
+   onclick="gtag('event', 'click_whatsapp', {
+   'event_category': 'contacto',
+   'event_label': 'boton_contactar'
+   });">
+   Contactar por WhatsApp
+</a>
   </div>
   <p style="font-size: 0.9rem; color: var(--gray); margin-top: 7px; font-style: italic; text-align: center;">
     Si tienes dudas, escríbeme y lo vemos sin compromiso.
@@ -380,7 +398,15 @@
       Escribime por WhatsApp.<br />
       Evaluamos tu situación, tus objetivos y te propongo la mejor forma de empezar.<br />
     </p>
-    <a class="btn" href="https://wa.me/995598786651?text=Hola!%20Quiero%20más%20información%20sobre%20el%20entrenamiento%20personalizado%20y%20nutrición" target="_blank">Hablar por WhatsApp</a>
+    <a class="btn" 
+   href="https://wa.me/995598786651?text=Hola!%20Quiero%20más%20información%20sobre%20el%20entrenamiento%20personalizado%20y%20nutrición" 
+   target="_blank"
+   onclick="gtag('event', 'click_whatsapp', {
+   'event_category': 'contacto',
+   'event_label': 'boton_hablar'
+   });">
+   Hablar por WhatsApp
+</a>
   </div>
 </section>
 
