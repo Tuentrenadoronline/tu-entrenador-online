@@ -347,27 +347,52 @@
 <div class="links" style="display:flex; align-items:center; gap:15px;">
 
   <!-- Spotify -->
-  <a href="https://open.spotify.com/show/5uwgiNtw48ZqIflNxMmz4p?si=52cd762b470d45da" target="_blank">
+  <a href="https://open.spotify.com/show/5uwgiNtw48ZqIflNxMmz4p?si=52cd762b470d45da" 
+   target="_blank"
+   onclick="gtag('event', 'click_spotify', {
+   'event_category': 'redes',
+   'event_label': 'spotify_header'
+   });">
     <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" alt="Spotify" width="70" style="display:block;">
   </a>
 
   <!-- Strava -->
-  <a href="https://www.strava.com/clubs/572654" target="_blank" style="text-decoration:none;">
+  <a href="https://www.strava.com/clubs/572654" 
+   target="_blank"
+   onclick="gtag('event', 'click_strava', {
+   'event_category': 'redes',
+   'event_label': 'strava_header'
+   });">
     <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Strava_Logo.svg" alt="Strava" width="50" style="display:block;">
   </a>
 
   <!-- Instagram -->
-  <a href="https://www.instagram.com/tu.entrenador_online" target="_blank" style="text-decoration:none;">
+  <a href="https://www.instagram.com/tu.entrenador_online" 
+   target="_blank"
+   onclick="gtag('event', 'click_instagram', {
+   'event_category': 'redes',
+   'event_label': 'instagram_header'
+   });">
     <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" width="40" style="display:block;">
   </a>
 
   <!-- YouTube -->
-  <a href="https://www.youtube.com/@Tuentrenador.online" target="_blank" style="text-decoration:none;">
+  <a href="https://www.youtube.com/@Tuentrenador.online" 
+   target="_blank"
+   onclick="gtag('event', 'click_youtube', {
+   'event_category': 'redes',
+   'event_label': 'youtube_header'
+   });">
     <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube" width="70" style="display:block;">
   </a>
 
   <!-- Blog: mano escribiendo blanca -->
-  <a href="blog.html" style="display:flex; align-items:center; gap:5px;" style="text-decoration:none;">
+  <a href="blog.html" 
+   onclick="gtag('event', 'click_blog', {
+   'event_category': 'navegacion',
+   'event_label': 'blog_header'
+   });"
+   style="display:flex; align-items:center; gap:5px; text-decoration:none;">
     <span style="font-size:28px; display:block; line-height:1; color:white;">✍️</span>
     <span style="color:#333;">Blog</span>
   </a>
