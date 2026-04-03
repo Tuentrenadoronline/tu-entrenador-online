@@ -111,10 +111,13 @@
     }
 
     .card {
-      border: 1px solid #e5e5e5;
-      padding: 36px 28px;
-      text-align: center;
-    }
+  border: 1px solid #e5e5e5;
+  padding: 36px 28px;
+  text-align: center;
+  background: var(--white); /* Asegura fondo blanco */
+  width: 100%;               /* Que use el espacio del grid */
+  border-radius: 12px;
+}
 
     .card p { font-size: 0.95rem; }
 
@@ -225,7 +228,7 @@
   min-height: 200px;           /* opcional: altura mínima para que se note el centrado */
 }
 
-.card-testimpnios p {
+.card-testimonios p {
   margin-bottom: 10px;
   color: #333;
   line-height: 1.5;
@@ -241,14 +244,14 @@
 
 /* RESPONSIVE */
 @media (min-width: 768px) {
-  .card {
+  .card-testimonios { /* Agregué -testimonios */
     flex: 0 0 45%;
     max-width: 45%;
   }
 }
 
 @media (min-width: 1024px) {
-  .card {
+  .card-testimonios { /* Agregué -testimonios */
     flex: 0 0 30%;
     max-width: 30%;
   }
