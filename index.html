@@ -177,6 +177,100 @@
     align-items: center;
     background-color: #ffffff;
        }
+    /* SECCIÓN */
+.testimonials-section {
+  background: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* TÍTULO */
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/* CARRUSEL */
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.card {
+  flex: 0 0 85%;
+  max-width: 85%;
+  background: #f5f5f5;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: left;
+  color: #111;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card p {
+  margin-bottom: 12px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.card span {
+  display: block;
+  font-weight: 600;
+  color: #111;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .card {
+    flex: 0 0 45%;
+    max-width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+}
+
+/* ANIMACIÓN INFINITA */
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* EFECTO LATERAL (fade para UX) */
+.carousel::before,
+.carousel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  z-index: 2;
+}
+
+.carousel::before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);
+}
+
+.carousel::after {
+  right: 0;
+  background: linear-gradient(to left, white, transparent);
+}
   </style>
   <link rel="icon" href="favicon.png" type="image/png">
 </head>
@@ -243,6 +337,62 @@
   </div>
 </section>
 
+<section class="testimonials-section">
+  <h2 class="title">LO QUE DICEN MIS ALUMNOS</h2>
+
+  <div class="carousel">
+    <div class="track">
+      <!-- Testimonios -->
+      <div class="card">
+        <p>"Jamás imaginé correr tantos kilómetros, aguantarlos y, lo más importante, terminarlos.
+Hace 5 años empecé este camino con una persona fundamental para mí: mi entrenador.
+Al principio no creía ni en él ni en mí, ni en que esto pudiera funcionar. Queremos todo ya y nos cuesta entender que cada kilómetro bien hecho lleva tiempo, dedicación y paciencia.
+Aprendí a construir de forma constante en el tiempo.
+Muchas veces solo pensamos en empezar y acabar, en querer resultados para ayer, pero las cosas de palacio van despacio.
+Agradezco haberme cruzado con mi entrenador y haber podido mejorar tanto a lo largo de estos años.
+Ahora solo queda pensar en la próxima línea de salida y seguir disfrutando del proceso.
+¡Vamos por más!"</p>
+        <span>JUANFRAN</span>
+      </div>
+      <div class="card">
+        <p>"Mis comienzos fueron correr para ser feliz, un día, una amiga me llevo hacer mi primer entreno en grupo, conociendo a mi entrenador y acogiéndome como uno más, a pesar de mi edad.
+Convirtiéndose en el primer y único entrenador durante estos años. Regalándome mucha fuerza y muchos ánimos, cuando el cuerpo y la mente se me ponen vagos. Agradezco y me siento muy orgullosa de conocerle y gracias a él sigo adelante y disfrutando con nuevos y bonitos sueños.
+Gracias por ser tan especial."</p>
+        <span>XILI</span>
+      </div>
+      <div class="card">
+        <p>"Hace cuatro años comencé este viaje con mi
+entrenador, sin imaginar lo lejos que llegaría.
+Con cada sesión, he crecido no solo en
+fuerza, sino en disciplina, confianza y 
+pasión.
+Hoy miro atrás y me siento increíblemente
+orgulloso de mi evolución.
+Si tienes un sueño,no lo sueltes,cada paso cuenta."</p>
+        <span>IVAN</span>
+      </div>
+      <div class="card">
+        <p>"Nunca imaginé llegar tan lejos, pero mi entrenador creyó en mí antes de que yo misma lo hiciera. Aunque el camino sea complejo, en la montaña encuentro la paz. Es curioso ver como  el entrenamiento más duro es a la vez mi mayor descanso. La magia del deporte.
+Para mí, el ambiente de las carreras populares y el compañerismo de las ultras valen más que cualquier podio. No busco ganar a nadie, busco aprender de las historias de quienes corren a mi lado. Cada persona que conozco aporta un granito de arena en mi propio crecimiento."</p>
+        <span>MARIA M.</span>
+      </div>
+      <!-- Duplicados para loop infinito -->
+      <div class="card">
+        <p>"Bajé mis tiempos y mejoré mi resistencia en pocas semanas."</p>
+        <span>Juan</span>
+      </div>
+      <div class="card">
+        <p>"Nunca había sido tan constante entrenando."</p>
+        <span>María</span>
+      </div>
+      <div class="card">
+        <p>"Resultados reales, sin humo."</p>
+        <span>Carlos</span>
+      </div>
+    </div>
+  </div>
+</section>
+  
 <section class="light">
   <div class="container">
     <h2>Experiencia real, <br class="salto-movil">no planes genéricos</h2>
@@ -452,6 +602,25 @@
     <p style="margin-top:8px;">© 2026 — tuentrenadoronline.com</p>
 </footer>
 
+  const track = document.querySelector('.track');
+
+/* PAUSA AL INTERACTUAR */
+track.addEventListener('mouseenter', () => {
+  track.style.animationPlayState = 'paused';
+});
+
+track.addEventListener('mouseleave', () => {
+  track.style.animationPlayState = 'running';
+});
+
+track.addEventListener('touchstart', () => {
+  track.style.animationPlayState = 'paused';
+});
+
+track.addEventListener('touchend', () => {
+  track.style.animationPlayState = 'running';
+});
+  
 </body>
 </html>
 
