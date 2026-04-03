@@ -209,15 +209,20 @@
 
 /* TARJETAS */
 .card {
-  flex: 0 0 85%; /* ancho de cada tarjeta en móvil */
+  flex: 0 0 85%;
   max-width: 85%;
-  background: #ffffff; /* fondo blanco de cada tarjeta */
+  background: #ffffff; 
   border-radius: 16px;
   padding: 20px;
-  text-align: right; /* texto alineado a la izquierda */
+  text-align: center;          /* centrado horizontal del texto */
   color: #111;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  scroll-snap-align: start; /* se alinea al hacer scroll */
+
+  display: flex;               /* activa flexbox */
+  flex-direction: column;      /* contenido vertical */
+  justify-content: center;     /* centra verticalmente */
+  align-items: center;         /* centra horizontalmente (opcional, refuerza text-align) */
+  min-height: 200px;           /* opcional: altura mínima para que se note el centrado */
 }
 
 .card p {
