@@ -591,25 +591,6 @@ Para mí, el ambiente de las carreras populares y el compañerismo de las ultras
 </p>
     <p style="margin-top:8px;">© 2026 — tuentrenadoronline.com</p>
 </footer>
-
-  const track = document.querySelector('.track');
-
-/* PAUSA AL INTERACTUAR */
-track.addEventListener('mouseenter', () => {
-  track.style.animationPlayState = 'paused';
-});
-
-track.addEventListener('mouseleave', () => {
-  track.style.animationPlayState = 'running';
-});
-
-track.addEventListener('touchstart', () => {
-  track.style.animationPlayState = 'paused';
-});
-
-track.addEventListener('touchend', () => {
-  track.style.animationPlayState = 'running';
-});
   
 </body>
 </html>
