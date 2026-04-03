@@ -14,7 +14,6 @@
         :root {
             --black: #0b0b0b;
             --gray: #666;
-            --accent: #333;
         }
         body { 
             font-family: 'Inter', sans-serif; 
@@ -30,28 +29,41 @@
         
         .content { font-size: 1.15rem; color: #333; }
         .content p { margin-bottom: 1.5rem; }
-        
-        /* Caja de llamado a la acción (CTA) - CLAVE PARA SEO Y VENTAS */
-        .cta-box {
-            background-color: #f9f9f9;
-            border-left: 4px solid var(--black);
-            padding: 30px;
-            margin: 40px 0;
-            border-radius: 0 8px 8px 0;
-        }
-        .cta-box p { margin-bottom: 15px; font-weight: 600; }
 
-        .btn-cta {
+        /* NUEVA CAJA DE CONVERSIÓN AL FINAL */
+        .cta-final {
+            background-color: #f9f9f9;
+            border: 2px solid var(--black);
+            padding: 40px;
+            margin: 50px 0;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .cta-final p { 
+            font-size: 1.3rem; 
+            font-weight: 700; 
+            margin-bottom: 20px; 
+            line-height: 1.2;
+            color: var(--black);
+        }
+        .btn-plan {
             display: inline-block;
             background-color: var(--black);
             color: #fff;
-            padding: 12px 25px;
+            padding: 18px 35px;
             text-decoration: none;
-            border-radius: 5px;
-            font-weight: 700;
-            transition: 0.3s;
+            border-radius: 8px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
-        .btn-cta:hover { background-color: #444; transform: translateY(-2px); }
+        .btn-plan:hover { 
+            background-color: #333; 
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
 
         .btn-back {
             display: inline-flex;
@@ -72,7 +84,7 @@
         li { margin-bottom: 8px; }
 
         @media (max-width: 600px) {
-            h1 { font-size: 2rem; }
+            h1 { font-size: 2.2rem; }
             body { padding: 40px 15px; }
         }
     </style>
@@ -84,25 +96,17 @@
     </header>
 
     <article class="content">
-
-        <p>En nutrición deportiva no solo importa “qué azúcar” ingerimos, sino su <strong>estructura molecular, osmolaridad y transportador intestinal</strong>. Estos factores determinan cuánto puedes absorber realmente durante una carrera de trail running sin sufrir problemas gástricos.</p>
-
-        <div class="cta-box">
-            <p>¿Buscas optimizar tu nutrición y entrenamientos para tu próximo Trail?</p>
-            <a href="../index.html" class="btn-cta">Ver Planes de Entrenamiento Personalizados</a>
-        </div>
+        <p>En nutrición deportiva no solo importa “qué azúcar” ingerimos, sino su <strong>estructura molecular, osmolaridad y transportador intestinal</strong>. Estos factores determinan cuánto puedes absorber realmente durante una carrera de trail running.</p>
 
         <h2>1. Carbohidratos de pico rápido</h2>
         <ul>
             <li><strong>Glucosa (dextrosa):</strong> Energía inmediata.</li>
-            <li><strong>Sacarosa:</strong> El azúcar de mesa común (50% glucosa + 50% fructosa).</li>
-            <li><strong>Jarabe de glucosa:</strong> Muy común en geles económicos.</li>
+            <li><strong>Sacarosa:</strong> El azúcar de mesa común.</li>
+            <li><strong>Jarabe de glucosa:</strong> Muy común en geles.</li>
         </ul>
 
-        <p><strong>Características:</strong> Absorción muy rápida, elevación brusca de glucosa en sangre y mayor riesgo gastrointestinal si la concentración es demasiado alta.</p>
-
         <h2>2. Intermedios (rápidos pero más estables)</h2>
-        <p>Aquí entran moléculas como la <strong>Maltodextrina</strong> o la <strong>Cluster Dextrin®</strong>. Su gran ventaja es la baja osmolaridad, lo que permite un vaciamiento gástrico más rápido y mayor tolerancia en dosis altas (ideales para ultras).</p>
+        <p>Aquí entran moléculas como la <strong>Maltodextrina</strong> o la <strong>Cluster Dextrin®</strong>. Su gran ventaja es la baja osmolaridad, lo que permite un vaciamiento gástrico más rápido.</p>
 
         <h2>El verdadero límite: los transportadores SGLT1 y GLUT5</h2>
         <p>No sirve de nada tomar 120g de carbohidratos si tus transportadores están saturados:</p>
@@ -119,18 +123,18 @@
             <li>Intestino entrenado: ~40–50 g/h</li>
         </ul>
 
-        <p><strong>Conclusión técnica:</strong> Combinando ambas vías (ratio 2:1 o 1:0.8) puedes alcanzar los 90-120 g/h si tu sistema digestivo está preparado.</p>
+        <p><strong>Conclusión técnica:</strong> Combinando ambas vías puedes alcanzar los 90-120 g/h si tu sistema digestivo está preparado.</p>
+
+        <div class="cta-final">
+            <p>¿Quieres que diseñe tu estrategia de entrenamiento y nutrición personalizada?</p>
+            <a href="../index.html" class="btn-plan">COMENZAR MI PLAN AHORA</a>
+        </div>
 
         <hr>
 
         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
-            <a href="../blog.html" class="btn-back">
-                ← Volver al Blog
-            </a>
-
-            <a href="hidratacion-trail-running.html" class="btn-back" style="background-color: var(--black); color: white;">
-                Siguiente: Hidratación →
-            </a>
+            <a href="../blog.html" class="btn-back">← Volver al Blog</a>
+            <a href="hidratacion-trail-running.html" class="btn-back" style="background-color: var(--black); color: white;">Siguiente: Hidratación →</a>
         </div>
 
     </article>
